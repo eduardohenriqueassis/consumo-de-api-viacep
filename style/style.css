@@ -70,7 +70,7 @@ label {
 }
 
 #cep {
-  width: 30%;
+  width: 150px;
 }
 
 span a {
@@ -99,4 +99,13 @@ button {
 
 button:hover {
   background: #034b94;
+}
+
+@media (max-width: 392px){ 
+  #cep{
+    width: 100%;
+  }
+  .container-rua {
+    grid-template-columns: 1fr;
+  }
 }
