@@ -34,7 +34,7 @@ export default class CepAPI {
       const dadosJson = await dados.json();
       if (dadosJson.hasOwnProperty('erro')) {
         console.log(dadosJson);
-        window.alert('preee');
+        window.alert('preencha um cep válido');
         // limparFormulario();
       } else {
         this.preencherFormulario(dadosJson);
